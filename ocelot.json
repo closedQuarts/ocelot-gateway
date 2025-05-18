@@ -1,37 +1,37 @@
 {
     "Routes": [
       {
-        "DownstreamPathTemplate": "/api/v1/billing/query",
-        "UpstreamPathTemplate": "/api/v1/billing/query",
+        "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}",
+        "UpstreamPathTemplate": "/api/v1/Bill/{subscriberId}",
         "UpstreamHttpMethod": [ "GET" ],
         "DownstreamHostAndPorts": [
           {
-            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
             "Port": 443
           }
         ],
         "DownstreamScheme": "https"
       },
       {
-        "DownstreamPathTemplate": "/api/v1/billing/query-detailed",
-        "UpstreamPathTemplate": "/api/v1/billing/query-detailed",
+        "DownstreamPathTemplate": "/api/v1/Bill/detailed",
+        "UpstreamPathTemplate": "/api/v1/Bill/detailed",
         "UpstreamHttpMethod": [ "GET" ],
         
         "DownstreamHostAndPorts": [
           {
-            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
             "Port": 443
           }
         ],
         "DownstreamScheme": "https"
       },
       {
-        "DownstreamPathTemplate": "/api/v1/billing/pay",
-        "UpstreamPathTemplate": "/api/v1/billing/pay",
+        "DownstreamPathTemplate": "/api/v1/Bill/pay",
+        "UpstreamPathTemplate": "/api/v1/Bill/pay",
         "UpstreamHttpMethod": [ "POST" ],
         "DownstreamHostAndPorts": [
           {
-            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
             "Port": 443
           }
         ],
