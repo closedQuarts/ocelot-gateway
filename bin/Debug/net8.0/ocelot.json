@@ -1,0 +1,45 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/v1/billing/query",
+        "UpstreamPathTemplate": "/api/v1/billing/query",
+        "UpstreamHttpMethod": [ "GET" ],
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "DownstreamScheme": "https"
+      },
+      {
+        "DownstreamPathTemplate": "/api/v1/billing/query-detailed",
+        "UpstreamPathTemplate": "/api/v1/billing/query-detailed",
+        "UpstreamHttpMethod": [ "GET" ],
+        
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "DownstreamScheme": "https"
+      },
+      {
+        "DownstreamPathTemplate": "/api/v1/billing/pay",
+        "UpstreamPathTemplate": "/api/v1/billing/pay",
+        "UpstreamHttpMethod": [ "POST" ],
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "mobilebillingapiefe.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "DownstreamScheme": "https"
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5111"
+    }
+  }
+  
