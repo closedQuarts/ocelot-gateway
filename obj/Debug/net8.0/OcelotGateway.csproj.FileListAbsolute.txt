@@ -37,3 +37,4 @@ C:\Users\efede\OcelotGateway\OcelotGateway\obj\Debug\net8.0\refint\OcelotGateway
 C:\Users\efede\OcelotGateway\OcelotGateway\obj\Debug\net8.0\OcelotGateway.pdb
 C:\Users\efede\OcelotGateway\OcelotGateway\obj\Debug\net8.0\OcelotGateway.genruntimeconfig.cache
 C:\Users\efede\OcelotGateway\OcelotGateway\obj\Debug\net8.0\ref\OcelotGateway.dll
+C:\Users\efede\OcelotGateway\OcelotGateway\obj\Debug\net8.0\OcelotGateway.sourcelink.json
