@@ -39,7 +39,7 @@
       }
     ],
     "GlobalConfiguration": {
-      "BaseUrl": "http://localhost:5111"
+      "BaseUrl": "https://ocelot-gateway-l1en.onrender.com"
     }
   }
   

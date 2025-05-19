@@ -7,7 +7,7 @@
         "DownstreamHostAndPorts": [
           {
             "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
+            "Port": 8080
           }
         ],
         "DownstreamScheme": "https"
@@ -20,7 +20,7 @@
         "DownstreamHostAndPorts": [
           {
             "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
+            "Port": 8080
           }
         ],
         "DownstreamScheme": "https"
@@ -32,7 +32,7 @@
         "DownstreamHostAndPorts": [
           {
             "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
+            "Port": 8080
           }
         ],
         "DownstreamScheme": "https"
