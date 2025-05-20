@@ -1,40 +1,52 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
-      "UpstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/swagger/index.html",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
           "Port": 443
         }
       ],
-      "DownstreamScheme": "https"
+      "UpstreamPathTemplate": "/",
+      "UpstreamHttpMethod": [ "GET", "HEAD" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/Bill/detailed/{subscriberId}/{month}/{year}",
-      "UpstreamPathTemplate": "/api/v1/Bill/detailed/{subscriberId}/{month}/{year}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
           "Port": 443
         }
       ],
-      "DownstreamScheme": "https"
+      "UpstreamPathTemplate": "/api/bill/{subscriberId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bill/detailed",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bill/detailed",
+      "UpstreamHttpMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bill/pay",
-      "UpstreamPathTemplate": "/api/v1/Bill/pay",
-      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
           "Port": 443
         }
       ],
-      "DownstreamScheme": "https"
+      "UpstreamPathTemplate": "/api/bill/pay",
+      "UpstreamHttpMethod": [ "POST" ]
     }
   ],
   "GlobalConfiguration": {
