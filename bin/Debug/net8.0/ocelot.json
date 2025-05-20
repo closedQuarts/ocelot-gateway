@@ -1,45 +1,43 @@
 {
-    "Routes": [
-      {
-        "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}",
-        "UpstreamPathTemplate": "/api/v1/Bill/{subscriberId}",
-        "UpstreamHttpMethod": [ "GET" ],
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
-          }
-        ],
-        "DownstreamScheme": "https"
-      },
-      {
-        "DownstreamPathTemplate": "/api/v1/Bill/detailed",
-        "UpstreamPathTemplate": "/api/v1/Bill/detailed",
-        "UpstreamHttpMethod": [ "GET" ],
-        
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
-          }
-        ],
-        "DownstreamScheme": "https"
-      },
-      {
-        "DownstreamPathTemplate": "/api/v1/Bill/pay",
-        "UpstreamPathTemplate": "/api/v1/Bill/pay",
-        "UpstreamHttpMethod": [ "POST" ],
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "https://mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
-            "Port": 443
-          }
-        ],
-        "DownstreamScheme": "https"
-      }
-    ],
-    "GlobalConfiguration": {
-      "BaseUrl": "https://ocelot-gateway-l1en.onrender.com"
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
+      "UpstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamScheme": "https"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bill/detailed/{subscriberId}/{month}/{year}",
+      "UpstreamPathTemplate": "/api/v1/Bill/detailed/{subscriberId}/{month}/{year}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamScheme": "https"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bill/pay",
+      "UpstreamPathTemplate": "/api/v1/Bill/pay",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamScheme": "https"
     }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://ocelot-gateway-l1en.onrender.com"
   }
-  
+}
