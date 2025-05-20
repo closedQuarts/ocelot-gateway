@@ -1,6 +1,18 @@
 {
   "Routes": [
     {
+      "DownstreamPathTemplate": "/swagger/index.html",
+      "UpstreamPathTemplate": "/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mobilebillingapiefe-hug0ahbxddd8dtdh.canadacentral-01.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamScheme": "https"
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
       "UpstreamPathTemplate": "/api/v1/Bill/{subscriberId}/{month}/{year}",
       "UpstreamHttpMethod": [ "GET" ],
